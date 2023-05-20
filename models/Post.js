@@ -29,6 +29,14 @@ const PostSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  comments: {
+    type: Array,
+    required: true,
+  },
+  condition: {
+    type: String,
+    default: "Not listed",
+  },
 });
 
 module.exports = mongoose.model("Post", PostSchema);

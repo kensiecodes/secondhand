@@ -19,6 +19,17 @@
                 <textarea class="form-control" id="caption" name="caption"></textarea>
               </div>
               <div class="mb-3">
+                <label for="caption" class="form-label">Condition</label>
+                <input list="condition">
+                <datalist class="form-control" id="condition" name="condition">
+                    <option value="New">
+                    <option value="Used (Like New)">
+                    <option value="Used (Great)">
+                    <option value="Used (Good)">
+                    <option value="Used (Fair)">
+                </datalist>
+              </div>
+              <div class="mb-3">
                 <label for="imgUpload" class="form-label">Image</label>
                 <input type="file" class="form-control" id="imageUpload" name="file">
               </div>
