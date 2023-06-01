@@ -2,6 +2,10 @@
 
 ## A buy nothing social network
 
+## Roadmap
+
+- Reactify
+
 ### Install
 
 `npm install`
