@@ -4,7 +4,7 @@
   "description": "100Devs Social Network",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "concurrently \"nodemon server.js\" \"npx tailwindcss -i ./public/css/style.css -o ./public/css/output.css --watch\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -31,6 +31,7 @@
     "validator": "^13.6.0"
   },
   "devDependencies": {
+    "concurrently": "^8.1.0",
     "tailwindcss": "^3.3.2"
   }
 }
