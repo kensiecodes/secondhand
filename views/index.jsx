@@ -4,11 +4,13 @@ import Header from './partials/Head'
 import Button from "./partials/Button"
 import Giving from "./partials/GivingSVG"
 import BlobOne from "./partials/BlobOne"
+import BlobTwo from "./partials/BlobTwo"
 
 export default function Index(props) {
     return (
     <>
-    <div className="absolute w-96 bottom-0 left-0"><BlobOne /></div>
+    <div className="absolute w-[60em] z-[-10] bottom-[-400px] left-[-200px]"><BlobTwo /></div>
+    <div className="absolute w-[60em] z-[-10] top-[-400px] right-[-300px]"><BlobOne /></div>
     <div className="mt-10">
     <Header />
     
