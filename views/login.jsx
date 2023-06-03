@@ -4,7 +4,7 @@ import Header from "./partials/Header";
 import BlobTwo from "./partials/BlobTwo";
 import BlobOne from "./partials/BlobOne";
 
-export default function Login(props) {
+export default function Login({ message }) {
   return (
     <>
       <Head />
@@ -19,14 +19,14 @@ export default function Login(props) {
       <main className="">
         <div className="row justify-content-center">
           <section className="col-6 mt-5">
-            {props.messages.errors &&
-              props.messages.errors.map((element) => (
+            {messages.errors &&
+              messages.errors.map((element) => (
                 <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
                   {element.msg}
                 </div>
               ))}
-            {props.messages.info
-              ? props.messages.info.map((element) => (
+            {messages.info
+              ? messages.info.map((element) => (
                   <div className="alert alert-danger text-red-600">
                     {element.message}
                   </div>

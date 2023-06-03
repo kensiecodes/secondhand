@@ -3,7 +3,7 @@ import Footer from "./partials/Footer";
 import Head from "./partials/Head";
 import Header from "./partials/Header";
 
-export default function Profile(props) {
+export default function Profile({ user, posts }) {
   return (
     <>
       <Head />
@@ -12,10 +12,10 @@ export default function Profile(props) {
         <div className="col-6">
           <div>
             <p>
-              <strong>User Name</strong>: {props.user.userName}
+              <strong>User Name</strong>: {user.userName}
             </p>
             <p>
-              <strong>Email</strong>: {props.user.email}
+              <strong>Email</strong>: {user.email}
             </p>
             <a href="/logout" className="col-3 btn btn-secondary">
               Logout
@@ -85,7 +85,7 @@ export default function Profile(props) {
         </div>
         <div className="col-6">
           <ul className="row list-unstyled">
-            {props.posts.map((post) => (
+            {posts.map((post) => (
               <li className="">
                 <a href={`/post/${post._id}`}>
                   <img className="" src={post.image} />
