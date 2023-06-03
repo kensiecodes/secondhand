@@ -5,10 +5,12 @@ import Giving from "./partials/GivingSVG";
 import BlobOne from "./partials/BlobOne";
 import BlobTwo from "./partials/BlobTwo";
 import Main from "./main";
+import Header from "./partials/Header";
 
 export default function Feed(props) {
   return (
     <Main>
+      <Header />
       <div class="container">
         <div class="row justify-content-center mt-5">
           <ul class="row list-unstyled">
@@ -19,8 +21,14 @@ export default function Feed(props) {
             </a>
           </li>
         <% } %>
-        <!-- for loop that displays all the images
-        to do: add titles --> */}
+        */}
+            {props.posts.map((post) => (
+              <li className="">
+                <a href={`/post/${post._id}`}>
+                  <img className="" src={post.image} />
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
