@@ -1,6 +1,6 @@
 import React from "react";
-import BlobOne from "./partials/BlobOne";
-import BlobTwo from "./partials/BlobTwo";
+import BlobOne from "./components/BlobOne";
+import BlobTwo from "./components/BlobTwo";
 import Main from "./main";
 
 export default function Post({ post, user }) {
@@ -69,15 +69,6 @@ export default function Post({ post, user }) {
             </form>
           </div>
           <ul>
-            {/* <% for(var i=0; i<comments.length; i++) {%>
-
-        <li className="col-6 justify-content-between mt-5">
-          <%= comments[i].comment %>
-          <a href="/profile/<%= comments[i].user %>"><%= comments[i].userName %></a>
-          
-         
-        </li>
-      <% } %> */}
             {comments.map((comment) => (
               <li className="">
                 {comment.comment}

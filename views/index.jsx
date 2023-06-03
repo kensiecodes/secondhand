@@ -1,9 +1,9 @@
 import React from "react";
-import Footer from "./partials/Footer";
-import Button from "./partials/Button";
-import Giving from "./partials/GivingSVG";
-import BlobOne from "./partials/BlobOne";
-import BlobTwo from "./partials/BlobTwo";
+import Footer from "./components/Footer";
+import Button from "./components/Button";
+import Giving from "./components/GivingSVG";
+import BlobOne from "./components/BlobOne";
+import BlobTwo from "./components/BlobTwo";
 import Main from "./main";
 
 export default function Index(props) {

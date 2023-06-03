@@ -2,7 +2,7 @@
 
 ## A buy nothing social network
 
-![image](https://github.com/kensiecodes/secondhand/assets/94876562/e3339fcb-8c60-4ce8-83e5-542eb90c4b67)
+![screenshot of project](/public/imgs/screenshot.png)
 
 This is a network for sharing goods for free, a concept spearheaded by [The Buy Nothing Project](https://buynothingproject.org/).
 
@@ -13,10 +13,12 @@ This is a network for sharing goods for free, a concept spearheaded by [The Buy 
   - Stylize everything with Tailwind. Correct routes.
 - Barter board
   - Specific board for trading goods and services (no money exchanged)
-- Implement user profiles
-  - With services offered section if relevant to user
-  - Full gallery of items for trade
-  - User avatars with defaults
+- Implement better user account experience
+  - Profile to have services offered section if relevant to user
+  - Full gallery of items for trade with titles
+  - User avatars with defaults available
+  - Settings page where user can change password and email
+  - Email verification for settings changes?
 - Host web app with guest user
 
 ### Install

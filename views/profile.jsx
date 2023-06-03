@@ -1,13 +1,19 @@
 import React from "react";
-import Footer from "./partials/Footer";
-import Head from "./partials/Head";
-import Header from "./partials/Header";
+import Footer from "./components/Footer";
+import Head from "./components/Head";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import BlobOne from "./components/BlobOne";
+import Button from "./components/Button";
 
 export default function Profile({ user, posts }) {
   return (
     <>
       <Head />
-      <Header />
+      <Nav />
+      <div className="overflow-hidden absolute w-[60em] z-[-10] top-[-400px] right-[-400px]">
+        <BlobOne />
+      </div>
       <div className="row mt-5">
         <div className="col-6">
           <div>
@@ -21,68 +27,8 @@ export default function Profile({ user, posts }) {
               Logout
             </a>
           </div>
-          <div className="mt-5">
-            <h2>Add a post</h2>
-            <form
-              action="/post/createPost"
-              enctype="multipart/form-data"
-              method="POST"
-            >
-              <div className="mb-3">
-                <label for="title" className="form-label">
-                  Title
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="title"
-                  name="title"
-                />
-              </div>
-              <div className="mb-3">
-                <label for="caption" className="form-label">
-                  Caption
-                </label>
-                <textarea
-                  className="form-control"
-                  id="caption"
-                  name="caption"
-                ></textarea>
-              </div>
-              <div className="mb-3">
-                <label for="caption" className="form-label">
-                  Condition
-                </label>
-                <input list="condition" />
-                <datalist
-                  className="form-control"
-                  id="condition"
-                  name="condition"
-                >
-                  <option value="New" />
-                  <option value="Used (Like New)" />
-                  <option value="Used (Great)" />
-                  <option value="Used (Good)" />
-                  <option value="Used (Fair)" />
-                </datalist>
-              </div>
-              <div className="mb-3">
-                <label for="imgUpload" className="form-label">
-                  Image
-                </label>
-                <input
-                  type="file"
-                  className="form-control"
-                  id="imageUpload"
-                  name="file"
-                />
-              </div>
-              <button type="submit" className="btn btn-primary" value="Upload">
-                Submit
-              </button>
-            </form>
-          </div>
         </div>
+        <Button link="/post/create" text="Create Post" />
         <div className="col-6">
           <ul className="row list-unstyled">
             {posts.map((post) => (

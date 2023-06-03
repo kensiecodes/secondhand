@@ -1,9 +1,9 @@
 import React from "react";
-import Head from "./partials/Head";
-import Header from "./partials/Header";
-import BlobTwo from "./partials/BlobTwo";
-import BlobOne from "./partials/BlobOne";
-import Messages from "./partials/Messages";
+import Head from "./components/Head";
+import Header from "./components/Header";
+import BlobTwo from "./components/BlobTwo";
+import BlobOne from "./components/BlobOne";
+import Messages from "./components/Messages";
 
 export default function Signup({ messages }) {
   return (

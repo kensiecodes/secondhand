@@ -34,6 +34,17 @@ module.exports = {
       console.log(err);
     }
   },
+  getCreate: async (req, res) => {
+    try {
+      res.render("createpost", {
+        title: "Create Post",
+        user: req.user,
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  },
+
   createPost: async (req, res) => {
     try {
       // Upload image to cloudinary
