@@ -2,7 +2,7 @@
 
 ## A buy nothing social network
 
-![screenshot of project](/public/imgs/screenshot.png)
+![image](https://github.com/kensiecodes/secondhand/assets/94876562/e3339fcb-8c60-4ce8-83e5-542eb90c4b67)
 
 This is a network for sharing goods for free, a concept spearheaded by [The Buy Nothing Project](https://buynothingproject.org/).
 
