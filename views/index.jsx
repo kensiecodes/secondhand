@@ -1,24 +1,22 @@
 import React from "react";
 import Footer from "./partials/Footer";
-import Header from "./partials/Head";
 import Button from "./partials/Button";
 import Giving from "./partials/GivingSVG";
 import BlobOne from "./partials/BlobOne";
 import BlobTwo from "./partials/BlobTwo";
+import Main from "./main";
 
 export default function Index(props) {
   return (
-    <>
+    <Main>
       <div className="absolute w-[60em] z-[-10] bottom-[-400px] left-[-200px]">
         <BlobTwo />
       </div>
-      <div className="absolute w-[60em] z-[-10] top-[-400px] right-[-300px]">
+      <div className="absolute w-[60em] z-[-10] top-[-400px] right-[-400px]">
         <BlobOne />
       </div>
       <div className="mt-10">
-        <Header />
-
-        <div className="flex row px-10 justify-center content-center pt-24">
+        <div className="flex flex-col md:flex-row px-10 justify-center content-center pt-24">
           <section className="h-full flex justify-between content-between flex-col">
             <header className="text-stone-800">
               <div className="text-center">
@@ -35,12 +33,12 @@ export default function Index(props) {
             </div>
           </section>
 
-          <div className="w-96 h-auto ">
+          <div className="w-96 h-auto mt-10 md:mt-0 max-md:mx-auto">
             <Giving />
           </div>
         </div>
       </div>
       <Footer />
-    </>
+    </Main>
   );
 }
