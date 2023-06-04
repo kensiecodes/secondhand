@@ -1,12 +1,12 @@
 import React from "react";
 import Head from "./components/Head";
 
-export default function Main({ children }) {
-  return (
-    <>
-      <Head />
+const Main = ({ children }) => (
+  <>
+    <Head />
 
-      <body>{children}</body>
-    </>
-  );
-}
+    <body>{children}</body>
+  </>
+);
+
+export default Main;
