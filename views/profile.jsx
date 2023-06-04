@@ -14,8 +14,8 @@ export default function Profile({ user, posts }) {
       <div className="overflow-hidden absolute w-[60em] z-[-10] top-[-400px] right-[-400px]">
         <BlobOne />
       </div>
-      <div className="row mt-5">
-        <div className="col-6">
+      <div className="flex m-auto mt-10 w-2/3 justify-center">
+        <div className="pr-5 mt-10">
           <div>
             <p>
               <strong>User Name</strong>: {user.userName}
@@ -23,24 +23,34 @@ export default function Profile({ user, posts }) {
             <p>
               <strong>Email</strong>: {user.email}
             </p>
-            <a href="/logout" className="col-3 btn btn-secondary">
-              Logout
-            </a>
+            <div className="pt-10">
+              <a href="/logout" className="col-3 btn btn-secondary">
+                Logout
+              </a>
+              <Button link="/post/create" text="Create Post" />
+            </div>
           </div>
         </div>
-        <Button link="/post/create" text="Create Post" />
-        <div className="col-6">
-          <ul className="row list-unstyled">
+
+        <div className="">
+          <h2 className="text-2xl text-right pr-3">Posts</h2>
+          <ul className="grid grid-cols-2">
             {posts.map((post) => (
-              <li className="">
+              <li className="m-2">
                 <a href={`/post/${post._id}`}>
-                  <img className="" src={post.image} />
+                  <img
+                    className="w-[300px] h-[300px] overflow-hidden object-cover"
+                    src={post.image}
+                  />
                 </a>
               </li>
             ))}
           </ul>
-          <div className="row justify-content-center mt-5">
-            <a className="btn btn-primary" href="/feed">
+          <div className="text-right pr-3 py-4 ">
+            <a
+              className="hover:text-teal-600 duration-150 ease-in-out transition"
+              href="/feed"
+            >
               Return to Feed
             </a>
           </div>

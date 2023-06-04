@@ -21,6 +21,7 @@ This is a network for sharing goods for free, a concept spearheaded by [The Buy 
   - Settings page where user can change password and email
   - Email verification for settings changes?
 - Host web app with guest user
+- Add available, pending, and closed status
 
 ### Install
 
