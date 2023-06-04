@@ -9,11 +9,12 @@ This is a network for sharing goods for free, a concept spearheaded by [The Buy 
 ## Roadmap
 
 - Reactify
-  - Convert all views to React
+  - ~~Convert all views to React~~
   - Stylize everything with Tailwind. Correct routes.
 - Barter board
-  - Specific board for trading goods and services (no money exchanged)
+  - Specific board for trading services (no money exchanged)
 - Implement better user account experience
+  - ~~Separate create post from profile~~
   - Profile to have services offered section if relevant to user
   - Full gallery of items for trade with titles
   - User avatars with defaults available

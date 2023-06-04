@@ -3,7 +3,7 @@ import BlobOne from "./components/BlobOne";
 import BlobTwo from "./components/BlobTwo";
 import Main from "./main";
 
-export default function Post({ post, user }) {
+export default function Post({ post, user, comments }) {
   return (
     <Main>
       {/* <div className="absolute w-[60em] z-[-10] bottom-[-400px] left-[-200px]">

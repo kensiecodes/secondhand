@@ -10,13 +10,16 @@ export default function Feed({ posts }) {
   return (
     <Main>
       <Nav />
-      <div class="container">
-        <div class="row justify-content-center mt-5">
-          <ul class="row list-unstyled">
+      <div class="md:mx-20">
+        <div class="mt-10">
+          <ul class="flex flex-wrap justify-center content-center">
             {posts.map((post) => (
-              <li className="">
+              <li className="mx-1">
                 <a href={`/post/${post._id}`}>
-                  <img className="" src={post.image} />
+                  <img
+                    className="object-cover w-[300px] h-[300px] my-2 overflow-hidden"
+                    src={post.image}
+                  />
                 </a>
               </li>
             ))}
