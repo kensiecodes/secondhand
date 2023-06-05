@@ -8,20 +8,31 @@ This is a network for sharing goods for free, a concept spearheaded by [The Buy 
 
 ## Roadmap
 
-- Reactify
+- General
   - ~~Convert all views to React~~
-  - Stylize everything with Tailwind. Correct routes.
-- Barter board
+  - ~~Stylize everything with Tailwind. Correct routes.~~
+  - Host web app with guest user
+  - Write classes for repeated class sets like transitions, inputs
+- Feed.jsx
   - Specific board for trading services (no money exchanged)
+  - Add available, pending, and closed status
+  - Lazy load infinite scroll
+  - Add giving and ISO filters
 - Implement better user account experience
   - ~~Separate create post from profile~~
-  - Profile to have services offered section if relevant to user
-  - Full gallery of items for trade with titles
   - User avatars with defaults available
   - Settings page where user can change password and email
   - Email verification for settings changes?
-- Host web app with guest user
-- Add available, pending, and closed status
+- Profile.jsx
+  - ~~Full gallery of items for trade with titles~~
+  - Have services offered section if relevant to user
+  - Add ability to view profiles of other users
+- Createpost.jsx
+  - Add image preview to createpost
+  - Add multiple images to one post
+- Post.jsx
+  - Add next and previous post buttons to individual post pages
+  - Add ability to edit posts that belong to the user
 
 ### Install
 

@@ -32,7 +32,7 @@ const Profile = ({ user, posts }) => (
       </div>
 
       <div className="">
-        <h2 className="text-2xl text-right pr-3">Posts</h2>
+        <h2 className="text-2xl text-right pr-3">Gives</h2>
         <ul className="grid grid-cols-2">
           {posts.map((post) => (
             <li className="m-2">
