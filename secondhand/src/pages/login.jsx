@@ -1,13 +1,11 @@
-import React from "react";
-import Head from "./components/Head";
 import Header from "./components/Header";
 import BlobTwo from "./components/BlobTwo";
 import BlobOne from "./components/BlobOne";
 import Messages from "./components/Messages";
+import Link from "next/link";
 
 const Login = ({ messages }) => (
   <>
-    <Head />
     <div className="mt-10"></div>
     <Header />
     <div className="overflow-hidden absolute w-[60em] z-[-10] top-[-400px] right-[-300px]">
@@ -70,12 +68,12 @@ const Login = ({ messages }) => (
 
                 <p className="text-sm font-light text-gray-500 pt-3">
                   Don’t have an account yet?{" "}
-                  <a
+                  <Link
                     href="/signup"
                     className="font-medium text-green-600 hover:underline"
                   >
                     Sign up
-                  </a>
+                  </Link>
                 </p>
               </form>
             </div>

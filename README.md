@@ -34,6 +34,7 @@ This is a network for sharing goods for free, a concept spearheaded by [The Buy 
 - Post.jsx
   - Add next and previous post buttons to individual post pages
   - Add ability to edit posts that belong to the user
+  - Add leaflet map
 
 ### Install
 

@@ -1,8 +1,8 @@
-import React from "react";
 import BlobOne from "./components/BlobOne";
 import BlobTwo from "./components/BlobTwo";
 import Main from "./main";
 import Nav from "./components/Nav";
+import Link from "next/link";
 
 const Post = ({ post, user, comments }) => (
   <Main>
@@ -98,13 +98,13 @@ const Post = ({ post, user, comments }) => (
         </div>
 
         <div className="px-6 pb-4 pt-6">
-          <a
+          <Link
             className="btn btn-primary text-stone-500 hover:text-teal-400 transition duration-150 ease-in-out"
             href="/feed"
           >
             <span className="fa fa-arrow-left pr-1 "></span>
             Return to Feed
-          </a>
+          </Link>
         </div>
       </div>
     </div>

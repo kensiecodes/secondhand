@@ -29,7 +29,7 @@ const Head = (props) => (
         href="fonts/Cherry_Bomb_One/CherryBombOne-regular.woff"
         as="font"
         type="font/woff"
-        crossorigin
+        crossOrigin
       ></link>
     </head>
   </>

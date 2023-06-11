@@ -44,7 +44,6 @@ module.exports = {
       console.log(err);
     }
   },
-
   createPost: async (req, res) => {
     try {
       // Upload image to cloudinary
