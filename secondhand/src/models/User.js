@@ -1,10 +1,25 @@
 import bcrypt from "bcrypt";
 import mongoose from "mongoose";
 
-const UserSchema = new mongoose.Schema({
-  userName: { type: String, unique: true },
-  email: { type: String, unique: true },
-  password: String,
+const UserSchema = new mongoose.Schema(
+  {
+    userName: { type: String, unique: true },
+    email: { type: String, unique: true },
+    password: String,
+  },
+  {
+    toObject: { virtuals: true },
+  }
+);
+UserSchema.virtual("following", {
+  ref: "Follow",
+  localField: "_id",
+  foreignField: "sender",
+});
+UserSchema.virtual("followers", {
+  ref: "Follow",
+  localField: "_id",
+  foreignField: "receiver",
 });
 
 // Password hash middleware.
@@ -39,4 +54,4 @@ UserSchema.methods.comparePassword = function comparePassword(
   });
 };
 
-export default mongoose.model("User", UserSchema);
+export default mongoose.models.User || mongoose.model("User", UserSchema);

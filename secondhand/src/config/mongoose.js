@@ -22,12 +22,12 @@ async function dbConnect() {
     const opts = {
       bufferCommands: false,
     };
+    cached.promise = await mongoose
+      .connect(DB_STRING, opts)
+      .then((mongoose) => {
+        return mongoose;
+      });
   }
-  cached.promise = (await mongoose.connect(DB_STRING, opts)).then(
-    (mongoose) => {
-      return mongoose;
-    }
-  );
 
   try {
     cached.conn = await cached.promise;
